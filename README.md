@@ -1,7 +1,7 @@
 autotab
 =======
 
-A short javascript shim for enabling auto-tabbing from one input to the next.
+A short javascript shim for enabling auto-tabbing from one input to the next. It is written in plain javascript (e.g. library-free).
 
 This javascript file (autotab.js, found in the public_html folder) provides the following functionality to a web page:
 
