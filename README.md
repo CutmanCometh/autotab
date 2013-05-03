@@ -3,7 +3,7 @@ autotab
 
 A short javascript shim for enabling auto-tabbing from one input to the next.
 
-This javascript file (autotab.js) provides the following functionality to a web page:
+This javascript file (autotab.js, found in the public_html folder) provides the following functionality to a web page:
 
 --Specify the maximum length of text fields, so that when the user has typed the maximum number of characters, the focus automatically shifts to the next text field on the page.
 
