@@ -9,6 +9,6 @@ This javascript file (autotab.js, found in the public_html folder) provides the 
 
 --Any input element with type of text, e-mail or password may be included. All you have to do is add the class "autotab" to the element.
 
---You may subvert the natural order of tabbing by also specifying the tabindex attribute of the text fields. NOTE: If you wish to specify the tab order, you must give give ALL the input[type:text] elements a tabindex, otherwise you may get aberrant behavior.
+--You may subvert the natural order of tabbing by also specifying the tabindex attribute of the text fields. NOTE: If you wish to specify the tab order, you must give give ALL the input elements a tabindex, otherwise you may get aberrant behavior.
 
 An HTML page and its accompanying CSS are provided just as a courtesy and to show some implementation possibilities.
