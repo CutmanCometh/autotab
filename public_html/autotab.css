@@ -1,0 +1,22 @@
+/*
+    Document   : autotab
+    Created on : May 2, 2013, 10:00:35 PM
+    Author     : CutmanCometh
+    Description:
+        Not important. Only here to give some simple styling to the form.
+*/
+
+body {
+    width: 800px;
+    margin: 0 auto;
+    border: 1px solid black;
+}
+
+*{
+    border-radius: 5px;/*because this is web 2.0, damnit, and that's how we role in web 2.0*/
+}
+
+.line-item{
+    display: block;
+    margin: 5px;
+}

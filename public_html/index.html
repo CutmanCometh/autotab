@@ -1,14 +1,60 @@
-<!--
-To change this template, choose Tools | Templates
-and open the template in the editor.
--->
 <!DOCTYPE html>
 <html>
     <head>
 	<title></title>
-	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="autotab.css" />
+	<script src="autotab.js"></script>
     </head>
     <body>
-	<div>TODO write content</div>
+	<h1>A Simple Sign-up Form for Testing autotab</h1>
+	<form method="get" action="">
+	    <fieldset>
+		<legend>Name</legend>
+		<label class="line-item">
+		    First: <input type="text" size="10" maxlength="10" tabindex="1" class="autotab" autofocus="autofocus"/> (10 characters max)
+		</label>
+		<label class="line-item">
+		    Last: <input type="text" size="10" maxlength="10" tabindex="2" class="autotab" /> (10 characters max)
+		</label>
+	    </fieldset>
+	    <fieldset>
+		<legend>Contact info</legend>
+		<fieldset>
+		    <legend>Address</legend>
+		    <label class="line-item">
+			Street: <input type="text" size="10" maxlength="10" tabindex="3" class="autotab" /> (10 characters max)
+		    </label>
+		    <label class="line-item">
+			City: <input type="text" size="10" maxlength="10"  tabindex="4" class="autotab" /> (10 characters max)
+		    </label>
+		    <p class="line-item">
+			<label>
+			    State: <input type="text" maxlength="2" size="2" tabindex="5" class="autotab" /> (2 characters max)
+			</label>
+			<label>
+			    Zip: <input type="text" maxlength="5" size="5" tabindex="6" class="autotab" /> (5 characters max)
+			</label>
+		    </p>
+		</fieldset>
+		<fieldset>
+		    <legend>Phone</legend>
+		    <p class="line-item">
+			<label for="phone-area">Phone number: </label>
+			(<input type="text" maxlength="3" size="3" tabindex="8" class="autotab" />)
+			<input type="text" maxlength="3" size="3" tabindex="9" class="autotab" />-
+			<input type="text" maxlength="4" size="4" tabindex="10" class="autotab" /><!--so, let's say that for some stupid business logic reason, we need to the tab focus to go to e-mail before phone number even though it phone number has to come first in the markup so, we make the e-mail address tabindex lower, and it will autotab there first-->
+		    </p>
+		</fieldset>
+		<fieldset>
+		    <legend>E-mail</legend>
+		    <label class="line-item">
+			E-mail address: <input type="email" maxlength="32" tabindex="7" class="autotab" /> (32 characters max)
+		    </label>
+		</fieldset>
+	    </fieldset>
+	    <input type="submit" class="autotab" tabindex="11" value="Go, baby, go!!!" /><!--we need to give it the autotab class so that it will get focus after the last text-box is filled, but-->
+	</form>
+
     </body>
 </html>
